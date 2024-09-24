@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'none'; media-src 'none'">
+		<title>Отчет Zotero</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_BIFSJ69U" class="item bookSection">
+			<h2>On the Related-Key Attack Security of Authenticated Encryption Schemes</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Clemente Galdi</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Stanislaw Jarecki</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Sebastian Faust</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Juliane Krämer</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Maximilian Orlt</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Patrick Struck</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Related-key attacks (RKA) are powerful cryptanalytic attacks, 
+where the adversary can tamper with the secret key of a cryptographic 
+scheme. Since their invention, RKA security has been an important design
+ goal in cryptography, and various works aim at designing cryptographic 
+primitives that offer protection against related-key attacks. At 
+EUROCRYPT’03, Bellare and Kohno introduced the first formal treatment of
+ related-key attacks focusing on pseudorandom functions and 
+permutations. This was later extended to cover other primitives such as 
+signatures and public key encryption schemes, but until now, a 
+comprehensive formal security analysis of authenticated encryption 
+schemes with associated data (AEAD) in the RKA setting has been missing.
+ The main contribution of our work is to close this gap for the relevant
+ class of nonce-based AEAD schemes. To this end, we revisit the common 
+approach to construct AEAD from encryption and message authentication. 
+We extend the traditional security notion of AEAD to the RKA setting and
+ consider an adversary that can tamper with the key Ke and Km of the 
+underlying encryption and MAC, respectively. We study two security 
+models. In our weak setting, we require that tampering will change both 
+Ke and Km, while in our strong setting, tampering can be arbitrary, 
+i.e., only one key might be affected. We then study the security of the 
+standard composition methods by analysing the nonce-based AEAD schemes 
+N1 (Encrypt-and-MAC), N2 (Encrypt-then-MAC), and N3 (MAC-then-Encrypt) 
+due to Namprempre, Rogaway, and Shrimpton (EUROCRYPT’03). We show that 
+these schemes are weakly RKA secure, while they can be broken under a 
+strong related-key attack. Finally, based on the N3 construction, we 
+give a novel AEAD scheme that achieves our stronger notion.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://link.springer.com/10.1007/978-3-031-14791-3_16">https://link.springer.com/10.1007/978-3-031-14791-3_16</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:07:10</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-031-14791-3_16</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>13409</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Cham</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer International Publishing</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-031-14790-6 978-3-031-14791-3</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>362-386</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Security and Cryptography for Networks</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:07:10</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:32:06</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>AEAD</li>
+					<li>misuse-resistant</li>
+					<li>RKA security</li>
+					<li>MAC</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_R7FJGQ2H">
+<div><div data-schema-version="8"><p>Исследуются уязвимости схем AEAD к 
+атакам со связанным ключом, предлагается новая схема AEAD, 
+обеспечивающая более высокий уровень безопасности в условиях RKA по 
+сравнению с существующими схемами</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_KAB3WMRE">Faust и др. - 2022 - On the Related-Key Attack Security of Authenticate.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_9F6QBEJA" class="item journalArticle">
+			<h2>A Method for Security Estimation of the SPN-Based Block Cipher Against Related-Key Attacks</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Dmytro Kaidalov</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Roman Oliynykov</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Oleksandr Kazymyrov</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Symmetric block ciphers are the most widely used cryptographic
+ primitives. In addition to providing privacy, block ciphers are used as
+ basic components in the construction of hash functions, message 
+authentication codes, pseudorandom number generators, as a part of 
+various cryptographic protocols, etc. Nowadays the most popular block 
+cipher is AES (Advanced Encryption Standard). It is used as a standard 
+of symmetric encryption in many countries. Several years ago it was 
+found a theoretical attack exploiting the AES key expansion algorithm 
+that allows reducing significantly the complexity comparing to the brute
+ force attack. This article presents an advanced method of finding the 
+number of active substitutions that helps to estimate the security of 
+encryption algorithms against related-key attacks. The method was 
+applied to a prospective block cipher, which is a candidate for the 
+Ukrainian standard.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2014-9-1</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://www.sciendo.com/article/10.2478/tmmp-2014-0023">https://www.sciendo.com/article/10.2478/tmmp-2014-0023</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:08:40</td>
+					</tr>
+					<tr>
+					<th>Права</th>
+						<td>http://creativecommons.org/licenses/by-nc-nd/3.0/</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>60</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>25-45</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>Tatra Mountains Mathematical Publications</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.2478/tmmp-2014-0023">10.2478/tmmp-2014-0023</a></td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>1</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>1210-3195</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:08:49</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>17.09.2024, 1:29:49</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>AES</li>
+					<li>algorithm</li>
+					<li>key expansion</li>
+					<li>RKA security</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_PAZR5KSS">
+<div><div data-schema-version="8"><p>Предлагается метод для оценки 
+безопасности блочного шифра на основе SPN от атак со связанным ключом, 
+акцентируя внимание на уязвимостях, выявленных в алгоритме расширения 
+ключа, метод основан на определении количества активных байт</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_7CAEF6UQ">Kaidalov и др. - 2014 - A Method for Security Estimation of the SPN-Based .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_D5QIJUGW" class="item bookSection">
+			<h2>Ciphers Secure Against Related-Key Attacks</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Takeo Kanade</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Josef Kittler</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Jon M. Kleinberg</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Friedemann Mattern</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>John C. Mitchell</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Moni Naor</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Oscar Nierstrasz</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>C. Pandu Rangan</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Bernhard Steffen</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Madhu Sudan</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Demetri Terzopoulos</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Dough Tygar</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Moshe Y. Vardi</td>
+					</tr>
+					<tr>
+						<th class="seriesEditor">Редактор серии</th>
+						<td>Gerhard Weikum</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Bimal Roy</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Willi Meier</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Stefan Lucks</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>In a related-key attack, the adversary is allowed to transform
+ the secret key and request encryptions of plaintexts under the 
+transformed key. This paper studies the security of PRF- and 
+PRP-constructions against related-key attacks. For adversaries who can 
+only transform a part of the key, we propose a construction and prove 
+its security, assuming a conventionally secure block cipher is given. By
+ the terms of concrete security, this is an improvement over a recent 
+result by Bellare and Kohno [2]. Further, based on some technical 
+observations, we present two novel constructions for related-key secure 
+PRFs, and we prove their security under number-theoretical infeasibility
+ assumptions.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2004</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://link.springer.com/10.1007/978-3-540-25937-4_23">http://link.springer.com/10.1007/978-3-540-25937-4_23</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:16:45</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-540-25937-4_23</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>3017</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Berlin, Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer Berlin Heidelberg</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-540-22171-5 978-3-540-25937-4</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>359-370</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Fast Software Encryption</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:16:57</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:47:18</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>RKA security</li>
+					<li>transformed key</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_K4X849JZ">
+<div><div data-schema-version="8"><p>Исследуется безопасность PRF- и 
+PRP-конструкций блочных шифров от атак со связанным ключом, предлагая 
+новые конструкции, которые обеспечивают защиту даже при частичном 
+преобразовании ключа злоумышленником</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_EKINN5I3">Lucks - 2004 - Ciphers Secure Against Related-Key Attacks.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_NP6I72QS" class="item bookSection">
+			<h2>Secure Message Authentication Against Related-Key Attack</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Shiho Moriai</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Rishiraj Bhattacharyya</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Arnab Roy</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Security against related-key attacks is an important criteria 
+for modern cryptographic constructions. In the related-key setting, the 
+adversary has the ability to query the underlying function on the target
+ key as well as on some related-keys. Although provable security against
+ related-key attack has received considerable attention in recent years,
+ most of the results in the literature aim to achieve pseudorandomness 
+and semantic security and often lead to inefficient constructions. In 
+this paper, we formalize the notion of unpredictability in the 
+relatedkey setting. We start with the definitions of related-key 
+security of Message Authentication Codes and identify required 
+properties of relatedkey derivation functions for provable security. We 
+show that unlike PRFs, MACs can inherently tolerate related-key attacks 
+against constant transformations. Next, we consider the construction of 
+variable-input-length MACs from fixed-input-length related-key 
+unpredictable functions. We present simple attacks against XCBC and 
+TMAC. We present a general construction of related-key secure MACs. Our 
+construction, instantiated with Enciphered CBC construction of Dodis, 
+Pietrzak and Puniya (EUROCRYPT 2008), results into first provably secure
+ domain extension of related-key secure unpredictable functions. 
+Finally, we present two constructions of related-key secure MACs from 
+DDH assumption. The first construction is extremely efficient and 
+tolerates group-induced partial key transformations. The second 
+construction achieves security against independent group-induced 
+tranformations and is more efficient than the RK-PRFs achieved by 
+Bellare and Cash (CRYPTO 2010).</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2014</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://link.springer.com/10.1007/978-3-662-43933-3_16">https://link.springer.com/10.1007/978-3-662-43933-3_16</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:16:48</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-662-43933-3_16</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>8424</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Berlin, Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer Berlin Heidelberg</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-662-43932-6 978-3-662-43933-3</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>305-324</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Fast Software Encryption</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:16:57</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:45:24</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>message authentication</li>
+					<li>RKA security</li>
+					<li>MAC</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_D5LHV957">
+<div><div data-schema-version="8"><p>Исследуется безопасность кодов 
+аутентификации сообщений (MAC) от атак со связанным ключом, предлагаются
+ новые конструкции защищенных MAC, доказуемо устойчивых к таким атакам, 
+анализируются уязвимости существующих конструкций, таких как XCBC и TMAC</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_9MXGNYFZ">Bhattacharyya и Roy - 2014 - Secure Message Authentication Against Related-Key .pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_3BEN5FW5" class="item journalArticle">
+			<h2>Generalized Related-Key Rectangle Attacks on Block Ciphers with Linear Key Schedule: Applications to SKINNY and GIFT</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Boxin Zhao</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Xiaoyang Dong</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Willi Meier</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Keting Jia</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Gaoli Wang</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>This paper gives a new generalized key-recovery model of 
+related-key rectangle attacks on block ciphers with linear key 
+schedules. The model is quite optimized and applicable to various block 
+ciphers with linear key schedule. As a proof of work, we apply the new 
+model to two very important block ciphers, i.e. SKINNY and GIFT, which 
+are basic modules of many candidates of the Lightweight Cryptography 
+(LWC) standardization project by NIST. For SKINNY, we reduce the 
+complexity of the best previous 27-round related-tweakey rectangle 
+attack on SKINNY-128-384 from 2331 to 2294. In addition, the first 
+28-round related-tweakey rectangle attack on SKINNY-128-384 is given, 
+which gains one more round than before. For the case of GIFT-64, we give
+ the first 24-round related-key rectangle attack with a time complexity 
+291.58, while the best previous attack on GIFT-64 only reaches 23 rounds
+ at most.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>06/2020</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Краткое назв.</th>
+						<td>Generalized related-key rectangle attacks on block ciphers with linear key schedule</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://link.springer.com/10.1007/s10623-020-00730-1">http://link.springer.com/10.1007/s10623-020-00730-1</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:16:57</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>88</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>1103-1126</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>Designs, Codes and Cryptography</td>
+					</tr>
+					<tr>
+					<th>ЦИО/DOI</th>
+						<td><a href="http://doi.org/10.1007/s10623-020-00730-1">10.1007/s10623-020-00730-1</a></td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>6</td>
+					</tr>
+					<tr>
+					<th>Сокращ. журнала</th>
+						<td>Des. Codes Cryptogr.</td>
+					</tr>
+					<tr>
+					<th>ISSN</th>
+						<td>0925-1022, 1573-7586</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:16:57</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 19:34:50</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>application</li>
+					<li>key recovery</li>
+					<li>rectangle attack</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_LEYIXKMC">
+<div><div data-schema-version="8"><p>Предлагается модель атаки с 
+использованием прямоугольных связанных ключей, применимая к блочным 
+шифрам с линейным распределением ключей. Демонстрируется эффективность 
+модели на примере шифров SKINNY и GIFT</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_Y25Z9A6G">Zhao и др. - 2020 - Generalized Related-Key Rectangle Attacks on Block.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_Q6GXXG8E" class="item bookSection">
+			<h2>Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Shiho Moriai</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Huaxiong Wang</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Bart Mennink</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Fresh rekeying is a well-established method to protect a 
+primitive or mode against side-channel attacks: an easy to protect but 
+cryptographically not so involved function generates a subkey from the 
+master key, and this subkey is then used for the block encryption of a 
+single or a few messages. It is an efficient way to achieve side-channel
+ protection, but current solutions only achieve birthday bound security 
+in the block size of the cipher and thus halve its security (except if 
+more involved primitives are employed). We present generalized solutions
+ to parallel block cipher rekeying that, for the first time, achieve 
+security beyond the birthday bound in the block size n. The first 
+solution involves, next to the subkey generation, one multiplication and
+ the core block cipher call and achieves 22n/3 security. The second 
+solution makes two block cipher calls, and achieves optimal 2n security.
+ Our third solution uses a slightly larger subkey generation function 
+but requires no adaptations to the core encryption and also achieves 
+optimal security. The construction seamlessly generalizes to permutation
+ based fresh rekeying. Central to our schemes is the observation that 
+fresh rekeying and generic tweakable block cipher design are two very 
+related topics, and we can take lessons from the advanced results in the
+ latter to improve our understanding and development of the former. We 
+subsequently use these rekeying schemes in a constructive manner to 
+deliver three authenticated encryption modes that achieve beyond 
+birthday bound security and are easy to protect against side-channel 
+attacks.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Язык</th>
+						<td>en</td>
+					</tr>
+					<tr>
+					<th>Краткое назв.</th>
+						<td>Beyond Birthday Bound Secure Fresh Rekeying</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://link.springer.com/10.1007/978-3-030-64837-4_21">https://link.springer.com/10.1007/978-3-030-64837-4_21</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:19:04</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-030-64837-4_21</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>12491</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Cham</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer International Publishing</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-030-64836-7 978-3-030-64837-4</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>630-661</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Advances in Cryptology – ASIACRYPT 2020</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:19:06</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:42:21</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>application</li>
+					<li>beyond birthday bound</li>
+					<li>fresh rekeying</li>
+					<li>OCB</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_H2YERWCP">
+<div><div data-schema-version="8"><p>Предлагаются решения для безопасной
+ смены ключей для блочного шифрования, которые обеспечивают безопасность
+ BBB. Демонстрируется применение 3 методов, способствующих повышению 
+безопасности схем AE и защите от атак по побочным каналам</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_XCMI28BS">Mennink - 2020 - Beyond Birthday Bound Secure Fresh Rekeying Appli.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_G23M53CW" class="item journalArticle">
+			<h2>Pyjamask: Block Cipher and Authenticated Encryption with Highly Efficient Masked Implementation</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Dahmun Goudarzi</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Jérémy Jean</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Stefan Kölbl</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Thomas Peyrin</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Matthieu Rivain</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Yu Sasaki</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Siang Meng Sim</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>This paper introduces Pyjamask, a new block cipher family and 
+authenticated encryption proposal submitted to the NIST lightweight 
+cryptography standardization process. Pyjamask targets side-channel 
+resistance as one of its main goal. More precisely, it strongly 
+minimizes the number of nonlinear gates used in its internal primitive 
+in order to allow efficient masked implementations, especially for 
+high-order masking in software. Compared to other block ciphers, our 
+proposal has thus among the smallest number of binary AND computations 
+per input bit at the time of writing. Even though Pyjamask minimizes 
+such an important criterion, it remains rather lightweight and 
+efficient, thanks to a general bitslice construction that enables to 
+computation of all nonlinear gates in parallel. For authenticated 
+encryption, we adopt the provably secure AEAD mode OCB which has been 
+extensively studied and has the benefit to offer full parallelization. 
+Of course, other block cipher-based modes can be considered as well if 
+other performance profiles are to be targeted. The paper first gives the
+ specification of the Pyjamask block cipher and the associated AEAD 
+proposal. We also provide a detailed design rationale for the block 
+cipher which is guided by our aim of software efficiency in the presence
+ of high-order masking. The security of the design is analyzed against 
+most commonly known cryptanalysis techniques. We finally describe 
+efficient (masked) implementations in software and provide 
+implementation results with aggressive performances for masking of very 
+high orders (up to 128). We also provide a rough estimation of the 
+hardware performances which remain much better than those of an AES 
+round-based implementation.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Краткое назв.</th>
+						<td>Pyjamask</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Google Scholar</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://tosc.iacr.org/index.php/ToSC/article/view/8617">https://tosc.iacr.org/index.php/ToSC/article/view/8617</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:19:36</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>2020</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>31–59</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>IACR Transactions on Symmetric Cryptology</td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>S1</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:19:36</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:52:25</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>AEAD</li>
+					<li>implementation</li>
+					<li>algorithm</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_45GZLQGI">
+<div><div data-schema-version="8"><p>Представляется семейство блочных 
+шифров Pyjamask и схема аутентифицированного шифрования, разработанная 
+для повышения эффективности и устойчивости к побочным каналам. Основное 
+внимание уделяется минимизации нелинейных вентилей для эффективной 
+реализации маскирования, что позволяет достичь высокой 
+производительности при шифровании и проверке подлинности данных</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_7X7PNBQS">Goudarzi и др. - 2020 - Pyjamask Block Cipher and Authenticated Encryptio.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_65B8FU2Q" class="item bookSection">
+			<h2>McOE: A Family of Almost Foolproof On-Line Authenticated Encryption Schemes</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Раздел книги</td>
+					</tr>
+					<tr>
+						<th class="editor">Редактор</th>
+						<td>Anne Canteaut</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Ewan Fleischmann</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Christian Forler</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Stefan Lucks</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>On-Line Authenticated Encryption (OAE) combines privacy with 
+data integrity and is on-line computable. Most block-cipher-based 
+schemes for Authenticated Encryption can be run on-line and are provably
+ secure against nonce-respecting adversaries. But they fail badly for 
+more general adversaries. This is not a theoretical observation only – 
+in practice, the reuse of nonces is a frequent issue1. In recent years, 
+cryptographers developed misuse-resistant schemes for Authenticated 
+Encryption. These guarantee excellent security even against general 
+adversaries which are allowed to reuse nonces. But they can not perfom 
+on-line encryption. This work introduces a new family of OAE schemes 
+–called McOE– dealing both with nonce-respecting and with general 
+adversaries. Furthermore, we present two block-cipher-based family 
+members, i.e., McOE-X and McOE-G. In contrast to other published OAE, 
+they provably guarantee reasonable security against general adversaries 
+as well as standard security against nonce-respecting adversaries.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2013</td>
+					</tr>
+					<tr>
+					<th>Краткое назв.</th>
+						<td>McOE</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>DOI.org (Crossref)</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="http://link.springer.com/10.1007/978-3-642-34047-5_12">http://link.springer.com/10.1007/978-3-642-34047-5_12</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:19:50</td>
+					</tr>
+					<tr>
+					<th>Дополнительно</th>
+						<td>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-642-34047-5_12</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>7549</td>
+					</tr>
+					<tr>
+					<th>Место</th>
+						<td>Berlin, Heidelberg</td>
+					</tr>
+					<tr>
+					<th>Издатель</th>
+						<td>Springer Berlin Heidelberg</td>
+					</tr>
+					<tr>
+					<th>ISBN</th>
+						<td>978-3-642-34046-8 978-3-642-34047-5</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>196-215</td>
+					</tr>
+					<tr>
+					<th>Название книги</th>
+						<td>Fast Software Encryption</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:19:53</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:47:09</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>on-line encryption</li>
+					<li>misuse-resistant</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_CVGVZ5R4">
+<div><div data-schema-version="8"><p>Представляется семейство 
+онлайн-схем шифрования с аутентификацией McOE, которое обеспечивает 
+защиту как от одноразовых, так и от более общих противников. Описываются
+ два конкретных члена этого семейства: McOE-X и McOE-G, которые 
+гарантируют высокую степень безопасности даже при повторном 
+использовании одноразовых номеров</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_ZLWXQMJ4">Fleischmann и др. - 2013 - McOE A Family of Almost Foolproof On-Line Authent.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_YRKGX2MT" class="item journalArticle">
+			<h2>Tweakable Blockciphers for Efficient Authenticated Encryptions with Beyond the Birthday-Bound Security</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Статья из рецензируемого журнала</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Yusuke Naito</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Modular design via a tweakable blockcipher (TBC) offers 
+efficient authenticated encryption (AE) schemes (with associated data) 
+that call a blockcipher once for each data block (of associated data or a
+ plaintext). However, the existing efficient blockcipher-based TBCs are 
+secure up to the birthday bound, where the underlying keyed blockcipher 
+is a secure strong pseudorandom permutation. Existing blockcipher-based 
+AE schemes with beyond-birthday-bound (BBB) security are not efficient, 
+that is, a blockcipher is called twice or more for each data block.
+In this paper, we present a TBC, XKX, that offers efficient 
+blockcipher-based AE schemes with BBB security, by combining with 
+efficient TBC-based AE schemes such as ΘCB and OTR. XKX is a combination
+ of two TBCs, Minematsu's TBC and Liskov et al.'s TBC. In the XKX-based 
+AE schemes, a nonce and a counter are taken as tweak; a nonce-dependent 
+blockcipher's key is generated by using a pseudo-random function F (from
+ Minematsu); a counter is inputted to an almost xor universal hash 
+function, and the hash value is xor-ed with the input and output blocks 
+of a blockcipher with the nonce-dependent key (from Liskov et al.). For 
+each query to the AE scheme, after the nonce-dependent key is generated,
+ it can be reused, thereby a blockcipher is called once for each data 
+block. We prove that the security bounds of the XKX-based AE schemes 
+become roughly ℓ2q/2n, where q is the number of queries to the AE 
+scheme, n is the blockcipher size, and ℓ is the number of blockcipher 
+calls in one AE evaluation. Regarding the function F, we present two 
+blockcipher-based instantiations, the concatenation of blockcipher 
+calls, F(1), and the xor of blockcipher calls, F(2), where F(i) calls a 
+blockcipher i+1 times. By the PRF/PRP switch, the security bounds of the
+ XKX-based AE schemes with F(1) become roughly ℓ2q/2n+q2/2n, thus if 
+ℓ≪2n/2 and q≪2n/2, these achieve BBB security. By the xor construction, 
+the security bounds of the XKX-based AE schemes with F(2) become roughly
+ ℓ2q/2n+q/2n, thus if ℓ≪2n/2, these achieve BBB security.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Google Scholar</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://eprint.iacr.org/2017/466">https://eprint.iacr.org/2017/466</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:47:10</td>
+					</tr>
+					<tr>
+					<th>Том</th>
+						<td>2017</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>1-26</td>
+					</tr>
+					<tr>
+					<th>Заголовок публикации</th>
+						<td>IACR Transactions on Symmetric Cryptology</td>
+					</tr>
+					<tr>
+					<th>Выпуск</th>
+						<td>2</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:47:17</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 23:59:02</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>application</li>
+					<li>beyond birthday bound</li>
+					<li>tweakable block cipher</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_KJE4S2YG">
+<div><div data-schema-version="8"><p>Рассматривается настраиваемый 
+блочный шифр XKX, который обеспечивает эффективные схемы AE с 
+безопасностью BBB. Предлагается инновационный подход, позволяющий 
+вызывать блочный шифр только один раз для каждого блока данных, что 
+значительно повышает эффективность и безопасность схем AE</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_MD39Q9GS">Naito - 2017 - Tweakable Blockciphers for Efficient Authenticated.pdf					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_UUDXBPH8" class="item conferencePaper">
+			<h2>How to Abuse and Fix Authenticated Encryption Without Key Commitment</h2>
+				<table>
+					<tbody><tr>
+						<th>Тип записи</th>
+						<td>Документ конференции</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Ange Albertini</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Thai Duong</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Shay Gueron</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Stefan Kölbl</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Atul Luykx</td>
+					</tr>
+					<tr>
+						<th class="author">Автор</th>
+						<td>Sophie Schmieg</td>
+					</tr>
+					<tr>
+					<th>Аннотация</th>
+						<td>Authenticated encryption (AE) is used in a wide variety of 
+applications, potentially in settings for which it was not originally 
+designed. Recent research tries to understand what happens when AE is 
+not used as prescribed by its designers. A question given relatively 
+little attention is whether an AE scheme guarantees “key commitment”: 
+ciphertext should only decrypt to a valid plaintext under the key used 
+to generate the ciphertext. Generally, AE schemes do not guarantee key 
+commitment as it is not part of AE’s design goal. Nevertheless, one 
+would not expect this seemingly obscure property to have much impact on 
+the security of actual products. In reality, however, products do rely 
+on key commitment. We discuss three recent applications where missing 
+key commitment is exploitable in practice. We provide proof-of-concept 
+attacks via a tool that constructs AES-GCM ciphertext which can be 
+decrypted to two plaintexts valid under a wide variety of file formats, 
+such as PDF, Windows executables, and DICOM. Finally we discuss two 
+solutions to add key commitment to AE schemes which have not been 
+analyzed in the literature: a generic approach that adds an explicit key
+ commitment scheme to the AE scheme, and a simple fix which works for AE
+ schemes like AES-GCM and ChaCha20Poly1305, but requires separate 
+analysis for each scheme.</td>
+					</tr>
+					<tr>
+					<th>Дата</th>
+						<td>2022</td>
+					</tr>
+					<tr>
+					<th>Библ. каталог</th>
+						<td>Google Scholar</td>
+					</tr>
+					<tr>
+					<th>URL-адрес</th>
+						<td><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/albertini">https://www.usenix.org/conference/usenixsecurity22/presentation/albertini</a></td>
+					</tr>
+					<tr>
+					<th>Дата доступа</th>
+						<td>13.08.2024, 3:47:13</td>
+					</tr>
+					<tr>
+					<th>Страницы</th>
+						<td>3291–3308</td>
+					</tr>
+					<tr>
+					<th>Назв. трудов</th>
+						<td>31st USENIX Security Symposium (USENIX Security 22)</td>
+					</tr>
+					<tr>
+					<th>Добавлен</th>
+						<td>13.08.2024, 3:47:17</td>
+					</tr>
+					<tr>
+					<th>Изменён</th>
+						<td>12.09.2024, 20:42:10</td>
+					</tr>
+				</tbody></table>
+				<h3 class="tags">Теги:</h3>
+				<ul class="tags">
+					<li>AES</li>
+					<li>key commitment</li>
+					<li>algorithm</li>
+					<li>OCB</li>
+				</ul>
+				<h3 class="notes">Заметки:</h3>
+				<ul class="notes">
+					<li id="item_Q276QJTI">
+<div><div data-schema-version="8"><p>Исследуется проблема отсутствия 
+"фиксации ключа" в схемах AE, показывая, что это может привести к 
+практическим уязвимостям в реальных приложениях. Предлагаются 2 подхода к
+ решению проблемы: добавление явной схемы ключевых обязательств и 
+простое исправление, специфичное для определенных схем AE</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Приложения</h3>
+				<ul class="attachments">
+					<li id="item_DABPCWKB">Albertini и др. - 2022 - How to Abuse and Fix Authenticated Encryption With.pdf					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>

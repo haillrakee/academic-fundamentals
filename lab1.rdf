@@ -1,0 +1,892 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/">
+    <bib:BookSection rdf:about="urn:isbn:978-3-031-14790-6%20978-3-031-14791-3">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>13409</prism:volume>
+                <dc:identifier>ISBN 978-3-031-14790-6 978-3-031-14791-3</dc:identifier>
+                <dc:title>Security and Cryptography for Networks</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cham</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer International Publishing</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Galdi</foaf:surname>
+                        <foaf:givenName>Clemente</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jarecki</foaf:surname>
+                        <foaf:givenName>Stanislaw</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Faust</foaf:surname>
+                        <foaf:givenName>Sebastian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Krämer</foaf:surname>
+                        <foaf:givenName>Juliane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Orlt</foaf:surname>
+                        <foaf:givenName>Maximilian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Struck</foaf:surname>
+                        <foaf:givenName>Patrick</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_112"/>
+        <link:link rdf:resource="#item_41"/>
+        <dc:subject>AEAD</dc:subject>
+        <dc:subject>misuse-resistant</dc:subject>
+        <dc:subject>RKA security</dc:subject>
+        <dc:subject>MAC</dc:subject>
+        <dc:title>On the Related-Key Attack Security of Authenticated Encryption Schemes</dc:title>
+        <dcterms:abstract>Related-key attacks (RKA) are powerful cryptanalytic attacks, where the adversary can tamper with the secret key of a cryptographic scheme. Since their invention, RKA security has been an important design goal in cryptography, and various works aim at designing cryptographic primitives that offer protection against related-key attacks. At EUROCRYPT’03, Bellare and Kohno introduced the first formal treatment of related-key attacks focusing on pseudorandom functions and permutations. This was later extended to cover other primitives such as signatures and public key encryption schemes, but until now, a comprehensive formal security analysis of authenticated encryption schemes with associated data (AEAD) in the RKA setting has been missing. The main contribution of our work is to close this gap for the relevant class of nonce-based AEAD schemes. To this end, we revisit the common approach to construct AEAD from encryption and message authentication. We extend the traditional security notion of AEAD to the RKA setting and consider an adversary that can tamper with the key Ke and Km of the underlying encryption and MAC, respectively. We study two security models. In our weak setting, we require that tampering will change both Ke and Km, while in our strong setting, tampering can be arbitrary, i.e., only one key might be affected. We then study the security of the standard composition methods by analysing the nonce-based AEAD schemes N1 (Encrypt-and-MAC), N2 (Encrypt-then-MAC), and N3 (MAC-then-Encrypt) due to Namprempre, Rogaway, and Shrimpton (EUROCRYPT’03). We show that these schemes are weakly RKA secure, while they can be broken under a strong related-key attack. Finally, based on the N3 construction, we give a novel AEAD scheme that achieves our stronger notion.</dcterms:abstract>
+        <dc:date>2022</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/10.1007/978-3-031-14791-3_16</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:07:10</dcterms:dateSubmitted>
+        <dc:description>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-031-14791-3_16</dc:description>
+        <bib:pages>362-386</bib:pages>
+    </bib:BookSection>
+    <bib:Memo rdf:about="#item_112">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Исследуются уязвимости схем AEAD к атакам со связанным ключом, предлагается новая схема AEAD, обеспечивающая более высокий уровень безопасности в условиях RKA по сравнению с существующими схемами&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_41">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Faust и др. - 2022 - On the Related-Key Attack Security of Authenticate.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://eprint.iacr.org/2022/140.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:07:12</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciendo.com/article/10.2478/tmmp-2014-0023">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1210-3195"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kaidalov</foaf:surname>
+                        <foaf:givenName>Dmytro</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Oliynykov</foaf:surname>
+                        <foaf:givenName>Roman</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kazymyrov</foaf:surname>
+                        <foaf:givenName>Oleksandr</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_101"/>
+        <link:link rdf:resource="#item_45"/>
+        <dc:subject>AES</dc:subject>
+        <dc:subject>algorithm</dc:subject>
+        <dc:subject>key expansion</dc:subject>
+        <dc:subject>RKA security</dc:subject>
+        <dc:title>A Method for Security Estimation of the SPN-Based Block Cipher Against Related-Key Attacks</dc:title>
+        <dcterms:abstract>Symmetric block ciphers are the most widely used cryptographic primitives. In addition to providing privacy, block ciphers are used as basic components in the construction of hash functions, message authentication codes, pseudorandom number generators, as a part of various cryptographic protocols, etc. Nowadays the most popular block cipher is AES (Advanced Encryption Standard). It is used as a standard of symmetric encryption in many countries. Several years ago it was found a theoretical attack exploiting the AES key expansion algorithm that allows reducing significantly the complexity comparing to the brute force attack. This article presents an advanced method of finding the number of active substitutions that helps to estimate the security of encryption algorithms against related-key attacks. The method was applied to a prospective block cipher, which is a candidate for the Ukrainian standard.</dcterms:abstract>
+        <dc:date>2014-9-1</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciendo.com/article/10.2478/tmmp-2014-0023</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:08:40</dcterms:dateSubmitted>
+        <dc:rights>http://creativecommons.org/licenses/by-nc-nd/3.0/</dc:rights>
+        <bib:pages>25-45</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1210-3195">
+        <prism:volume>60</prism:volume>
+        <dc:title>Tatra Mountains Mathematical Publications</dc:title>
+        <dc:identifier>DOI 10.2478/tmmp-2014-0023</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 1210-3195</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_101">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Предлагается метод для оценки безопасности блочного шифра на основе SPN от атак со связанным ключом, акцентируя внимание на уязвимостях, выявленных в алгоритме расширения ключа, метод основан на определении количества активных байт&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_45">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Kaidalov и др. - 2014 - A Method for Security Estimation of the SPN-Based .pdf</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-540-22171-5%20978-3-540-25937-4">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>3017</prism:volume>
+                <dc:identifier>ISBN 978-3-540-22171-5 978-3-540-25937-4</dc:identifier>
+                <dc:title>Fast Software Encryption</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <z:seriesEditors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kanade</foaf:surname>
+                        <foaf:givenName>Takeo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kittler</foaf:surname>
+                        <foaf:givenName>Josef</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kleinberg</foaf:surname>
+                        <foaf:givenName>Jon M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mattern</foaf:surname>
+                        <foaf:givenName>Friedemann</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mitchell</foaf:surname>
+                        <foaf:givenName>John C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naor</foaf:surname>
+                        <foaf:givenName>Moni</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nierstrasz</foaf:surname>
+                        <foaf:givenName>Oscar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pandu Rangan</foaf:surname>
+                        <foaf:givenName>C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Steffen</foaf:surname>
+                        <foaf:givenName>Bernhard</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sudan</foaf:surname>
+                        <foaf:givenName>Madhu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Terzopoulos</foaf:surname>
+                        <foaf:givenName>Demetri</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tygar</foaf:surname>
+                        <foaf:givenName>Dough</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vardi</foaf:surname>
+                        <foaf:givenName>Moshe Y.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Weikum</foaf:surname>
+                        <foaf:givenName>Gerhard</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </z:seriesEditors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roy</foaf:surname>
+                        <foaf:givenName>Bimal</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Meier</foaf:surname>
+                        <foaf:givenName>Willi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lucks</foaf:surname>
+                        <foaf:givenName>Stefan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_97"/>
+        <link:link rdf:resource="#item_54"/>
+        <dc:subject>RKA security</dc:subject>
+        <dc:subject>transformed key</dc:subject>
+        <dc:title>Ciphers Secure Against Related-Key Attacks</dc:title>
+        <dcterms:abstract>In a related-key attack, the adversary is allowed to transform the secret key and request encryptions of plaintexts under the transformed key. This paper studies the security of PRF- and PRP-constructions against related-key attacks. For adversaries who can only transform a part of the key, we propose a construction and prove its security, assuming a conventionally secure block cipher is given. By the terms of concrete security, this is an improvement over a recent result by Bellare and Kohno [2]. Further, based on some technical observations, we present two novel constructions for related-key secure PRFs, and we prove their security under number-theoretical infeasibility assumptions.</dcterms:abstract>
+        <dc:date>2004</dc:date>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/978-3-540-25937-4_23</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:16:45</dcterms:dateSubmitted>
+        <dc:description>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-540-25937-4_23</dc:description>
+        <bib:pages>359-370</bib:pages>
+    </bib:BookSection>
+    <bib:Memo rdf:about="#item_97">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Исследуется безопасность PRF- и PRP-конструкций блочных шифров от атак со связанным ключом, предлагая новые конструкции, которые обеспечивают защиту даже при частичном преобразовании ключа злоумышленником&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_54">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Lucks - 2004 - Ciphers Secure Against Related-Key Attacks.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://iacr.org/archive/fse2004/30170360/30170360.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:16:58</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-662-43932-6%20978-3-662-43933-3">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>8424</prism:volume>
+                <dc:identifier>ISBN 978-3-662-43932-6 978-3-662-43933-3</dc:identifier>
+                <dc:title>Fast Software Encryption</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moriai</foaf:surname>
+                        <foaf:givenName>Shiho</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bhattacharyya</foaf:surname>
+                        <foaf:givenName>Rishiraj</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roy</foaf:surname>
+                        <foaf:givenName>Arnab</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_100"/>
+        <link:link rdf:resource="#item_55"/>
+        <dc:subject>message authentication</dc:subject>
+        <dc:subject>RKA security</dc:subject>
+        <dc:subject>MAC</dc:subject>
+        <dc:title>Secure Message Authentication Against Related-Key Attack</dc:title>
+        <dcterms:abstract>Security against related-key attacks is an important criteria for modern cryptographic constructions. In the related-key setting, the adversary has the ability to query the underlying function on the target key as well as on some related-keys. Although provable security against related-key attack has received considerable attention in recent years, most of the results in the literature aim to achieve pseudorandomness and semantic security and often lead to inefficient constructions. In this paper, we formalize the notion of unpredictability in the relatedkey setting. We start with the definitions of related-key security of Message Authentication Codes and identify required properties of relatedkey derivation functions for provable security. We show that unlike PRFs, MACs can inherently tolerate related-key attacks against constant transformations. Next, we consider the construction of variable-input-length MACs from fixed-input-length related-key unpredictable functions. We present simple attacks against XCBC and TMAC. We present a general construction of related-key secure MACs. Our construction, instantiated with Enciphered CBC construction of Dodis, Pietrzak and Puniya (EUROCRYPT 2008), results into first provably secure domain extension of related-key secure unpredictable functions. Finally, we present two constructions of related-key secure MACs from DDH assumption. The first construction is extremely efficient and tolerates group-induced partial key transformations. The second construction achieves security against independent group-induced tranformations and is more efficient than the RK-PRFs achieved by Bellare and Cash (CRYPTO 2010).</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/10.1007/978-3-662-43933-3_16</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:16:48</dcterms:dateSubmitted>
+        <dc:description>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-662-43933-3_16</dc:description>
+        <bib:pages>305-324</bib:pages>
+    </bib:BookSection>
+    <bib:Memo rdf:about="#item_100">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Исследуется безопасность кодов аутентификации сообщений (MAC) от атак со связанным ключом, предлагаются новые конструкции защищенных MAC, доказуемо устойчивых к таким атакам, анализируются уязвимости существующих конструкций, таких как XCBC и TMAC&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_55">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Bhattacharyya и Roy - 2014 - Secure Message Authentication Against Related-Key .pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.iacr.org/archive/fse2013/84240283/84240283.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:16:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="http://link.springer.com/10.1007/s10623-020-00730-1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0925-1022,%201573-7586"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhao</foaf:surname>
+                        <foaf:givenName>Boxin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dong</foaf:surname>
+                        <foaf:givenName>Xiaoyang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Meier</foaf:surname>
+                        <foaf:givenName>Willi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jia</foaf:surname>
+                        <foaf:givenName>Keting</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Gaoli</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_111"/>
+        <link:link rdf:resource="#item_70"/>
+        <dc:subject>application</dc:subject>
+        <dc:subject>key recovery</dc:subject>
+        <dc:subject>rectangle attack</dc:subject>
+        <dc:title>Generalized Related-Key Rectangle Attacks on Block Ciphers with Linear Key Schedule: Applications to SKINNY and GIFT</dc:title>
+        <dcterms:abstract>This paper gives a new generalized key-recovery model of related-key rectangle attacks on block ciphers with linear key schedules. The model is quite optimized and applicable to various block ciphers with linear key schedule. As a proof of work, we apply the new model to two very important block ciphers, i.e. SKINNY and GIFT, which are basic modules of many candidates of the Lightweight Cryptography (LWC) standardization project by NIST. For SKINNY, we reduce the complexity of the best previous 27-round related-tweakey rectangle attack on SKINNY-128-384 from 2331 to 2294. In addition, the first 28-round related-tweakey rectangle attack on SKINNY-128-384 is given, which gains one more round than before. For the case of GIFT-64, we give the first 24-round related-key rectangle attack with a time complexity 291.58, while the best previous attack on GIFT-64 only reaches 23 rounds at most.</dcterms:abstract>
+        <dc:date>06/2020</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Generalized related-key rectangle attacks on block ciphers with linear key schedule</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/s10623-020-00730-1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:16:57</dcterms:dateSubmitted>
+        <bib:pages>1103-1126</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0925-1022,%201573-7586">
+        <prism:volume>88</prism:volume>
+        <dc:title>Designs, Codes and Cryptography</dc:title>
+        <dc:identifier>DOI 10.1007/s10623-020-00730-1</dc:identifier>
+        <prism:number>6</prism:number>
+        <dcterms:alternative>Des. Codes Cryptogr.</dcterms:alternative>
+        <dc:identifier>ISSN 0925-1022, 1573-7586</dc:identifier>
+    </bib:Journal>
+    <bib:Memo rdf:about="#item_111">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Предлагается модель атаки с использованием прямоугольных связанных ключей, применимая к блочным шифрам с линейным распределением ключей. Демонстрируется эффективность модели на примере шифров SKINNY и GIFT&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_70">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Zhao и др. - 2020 - Generalized Related-Key Rectangle Attacks on Block.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://eprint.iacr.org/2019/714.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:20:00</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-030-64836-7%20978-3-030-64837-4">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>12491</prism:volume>
+                <dc:identifier>ISBN 978-3-030-64836-7 978-3-030-64837-4</dc:identifier>
+                <dc:title>Advances in Cryptology – ASIACRYPT 2020</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cham</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer International Publishing</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moriai</foaf:surname>
+                        <foaf:givenName>Shiho</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wang</foaf:surname>
+                        <foaf:givenName>Huaxiong</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mennink</foaf:surname>
+                        <foaf:givenName>Bart</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_110"/>
+        <link:link rdf:resource="#item_60"/>
+        <dc:subject>application</dc:subject>
+        <dc:subject>beyond birthday bound</dc:subject>
+        <dc:subject>fresh rekeying</dc:subject>
+        <dc:subject>OCB</dc:subject>
+        <dc:title>Beyond Birthday Bound Secure Fresh Rekeying: Application to Authenticated Encryption</dc:title>
+        <dcterms:abstract>Fresh rekeying is a well-established method to protect a primitive or mode against side-channel attacks: an easy to protect but cryptographically not so involved function generates a subkey from the master key, and this subkey is then used for the block encryption of a single or a few messages. It is an efficient way to achieve side-channel protection, but current solutions only achieve birthday bound security in the block size of the cipher and thus halve its security (except if more involved primitives are employed). We present generalized solutions to parallel block cipher rekeying that, for the first time, achieve security beyond the birthday bound in the block size n. The first solution involves, next to the subkey generation, one multiplication and the core block cipher call and achieves 22n/3 security. The second solution makes two block cipher calls, and achieves optimal 2n security. Our third solution uses a slightly larger subkey generation function but requires no adaptations to the core encryption and also achieves optimal security. The construction seamlessly generalizes to permutation based fresh rekeying. Central to our schemes is the observation that fresh rekeying and generic tweakable block cipher design are two very related topics, and we can take lessons from the advanced results in the latter to improve our understanding and development of the former. We subsequently use these rekeying schemes in a constructive manner to deliver three authenticated encryption modes that achieve beyond birthday bound security and are easy to protect against side-channel attacks.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Beyond Birthday Bound Secure Fresh Rekeying</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/10.1007/978-3-030-64837-4_21</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:19:04</dcterms:dateSubmitted>
+        <dc:description>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-030-64837-4_21</dc:description>
+        <bib:pages>630-661</bib:pages>
+    </bib:BookSection>
+    <bib:Memo rdf:about="#item_110">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Предлагаются решения для безопасной смены ключей для блочного шифрования, которые обеспечивают безопасность BBB. Демонстрируется применение 3 методов, способствующих повышению безопасности схем AE и защите от атак по побочным каналам&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Mennink - 2020 - Beyond Birthday Bound Secure Fresh Rekeying Appli.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://eprint.iacr.org/2020/1082.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:19:08</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://tosc.iacr.org/index.php/ToSC/article/view/8617">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>2020</prism:volume>
+                <dc:title>IACR Transactions on Symmetric Cryptology</dc:title>
+                <prism:number>S1</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Goudarzi</foaf:surname>
+                        <foaf:givenName>Dahmun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jean</foaf:surname>
+                        <foaf:givenName>Jérémy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kölbl</foaf:surname>
+                        <foaf:givenName>Stefan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Peyrin</foaf:surname>
+                        <foaf:givenName>Thomas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rivain</foaf:surname>
+                        <foaf:givenName>Matthieu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sasaki</foaf:surname>
+                        <foaf:givenName>Yu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sim</foaf:surname>
+                        <foaf:givenName>Siang Meng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_109"/>
+        <link:link rdf:resource="#item_65"/>
+        <dc:subject>AEAD</dc:subject>
+        <dc:subject>implementation</dc:subject>
+        <dc:subject>algorithm</dc:subject>
+        <dc:title>Pyjamask: Block Cipher and Authenticated Encryption with Highly Efficient Masked Implementation</dc:title>
+        <dcterms:abstract>This paper introduces Pyjamask, a new block cipher family and authenticated encryption proposal submitted to the NIST lightweight cryptography standardization process. Pyjamask targets side-channel resistance as one of its main goal. More precisely, it strongly minimizes the number of nonlinear gates used in its internal primitive in order to allow efficient masked implementations, especially for high-order masking in software. Compared to other block ciphers, our proposal has thus among the smallest number of binary AND computations per input bit at the time of writing. Even though Pyjamask minimizes such an important criterion, it remains rather lightweight and efficient, thanks to a general bitslice construction that enables to computation of all nonlinear gates in parallel. For authenticated encryption, we adopt the provably secure AEAD mode OCB which has been extensively studied and has the benefit to offer full parallelization. Of course, other block cipher-based modes can be considered as well if other performance profiles are to be targeted. The paper first gives the specification of the Pyjamask block cipher and the associated AEAD proposal. We also provide a detailed design rationale for the block cipher which is guided by our aim of software efficiency in the presence of high-order masking. The security of the design is analyzed against most commonly known cryptanalysis techniques. We finally describe efficient (masked) implementations in software and provide implementation results with aggressive performances for masking of very high orders (up to 128). We also provide a rough estimation of the hardware performances which remain much better than those of an AES round-based implementation.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <z:shortTitle>Pyjamask</z:shortTitle>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://tosc.iacr.org/index.php/ToSC/article/view/8617</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:19:36</dcterms:dateSubmitted>
+        <bib:pages>31–59</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_109">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Представляется семейство блочных шифров Pyjamask и схема аутентифицированного шифрования, разработанная для повышения эффективности и устойчивости к побочным каналам. Основное внимание уделяется минимизации нелинейных вентилей для эффективной реализации маскирования, что позволяет достичь высокой производительности при шифровании и проверке подлинности данных&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_65">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Goudarzi и др. - 2020 - Pyjamask Block Cipher and Authenticated Encryptio.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://tosc.iacr.org/index.php/ToSC/article/download/8617/8183/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:19:38</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-642-34046-8%20978-3-642-34047-5">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>7549</prism:volume>
+                <dc:identifier>ISBN 978-3-642-34046-8 978-3-642-34047-5</dc:identifier>
+                <dc:title>Fast Software Encryption</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin, Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer Berlin Heidelberg</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Canteaut</foaf:surname>
+                        <foaf:givenName>Anne</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fleischmann</foaf:surname>
+                        <foaf:givenName>Ewan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Forler</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lucks</foaf:surname>
+                        <foaf:givenName>Stefan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_99"/>
+        <link:link rdf:resource="#item_68"/>
+        <dc:subject>on-line encryption</dc:subject>
+        <dc:subject>misuse-resistant</dc:subject>
+        <dc:title>McOE: A Family of Almost Foolproof On-Line Authenticated Encryption Schemes</dc:title>
+        <dcterms:abstract>On-Line Authenticated Encryption (OAE) combines privacy with data integrity and is on-line computable. Most block-cipher-based schemes for Authenticated Encryption can be run on-line and are provably secure against nonce-respecting adversaries. But they fail badly for more general adversaries. This is not a theoretical observation only – in practice, the reuse of nonces is a frequent issue1. In recent years, cryptographers developed misuse-resistant schemes for Authenticated Encryption. These guarantee excellent security even against general adversaries which are allowed to reuse nonces. But they can not perfom on-line encryption. This work introduces a new family of OAE schemes –called McOE– dealing both with nonce-respecting and with general adversaries. Furthermore, we present two block-cipher-based family members, i.e., McOE-X and McOE-G. In contrast to other published OAE, they provably guarantee reasonable security against general adversaries as well as standard security against nonce-respecting adversaries.</dcterms:abstract>
+        <dc:date>2013</dc:date>
+        <z:shortTitle>McOE</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/978-3-642-34047-5_12</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:19:50</dcterms:dateSubmitted>
+        <dc:description>Series Title: Lecture Notes in Computer Science
+DOI: 10.1007/978-3-642-34047-5_12</dc:description>
+        <bib:pages>196-215</bib:pages>
+    </bib:BookSection>
+    <bib:Memo rdf:about="#item_99">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Представляется семейство онлайн-схем шифрования с аутентификацией McOE, которое обеспечивает защиту как от одноразовых, так и от более общих противников. Описываются два конкретных члена этого семейства: McOE-X и McOE-G, которые гарантируют высокую степень безопасности даже при повторном использовании одноразовых номеров&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_68">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Fleischmann и др. - 2013 - McOE A Family of Almost Foolproof On-Line Authent.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://eprint.iacr.org/2011/644.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:19:55</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://eprint.iacr.org/2017/466">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>2017</prism:volume>
+                <dc:title>IACR Transactions on Symmetric Cryptology</dc:title>
+                <prism:number>2</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Naito</foaf:surname>
+                        <foaf:givenName>Yusuke</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_105"/>
+        <link:link rdf:resource="#item_82"/>
+        <dc:subject>application</dc:subject>
+        <dc:subject>beyond birthday bound</dc:subject>
+        <dc:subject>tweakable block cipher</dc:subject>
+        <dc:title>Tweakable Blockciphers for Efficient Authenticated Encryptions with Beyond the Birthday-Bound Security</dc:title>
+        <dcterms:abstract>Modular design via a tweakable blockcipher (TBC) offers efficient authenticated encryption (AE) schemes (with associated data) that call a blockcipher once for each data block (of associated data or a plaintext). However, the existing efficient blockcipher-based TBCs are secure up to the birthday bound, where the underlying keyed blockcipher is a secure strong pseudorandom permutation. Existing blockcipher-based AE schemes with beyond-birthday-bound (BBB) security are not efficient, that is, a blockcipher is called twice or more for each data block.
+In this paper, we present a TBC, XKX, that offers efficient blockcipher-based AE schemes with BBB security, by combining with efficient TBC-based AE schemes such as ΘCB and OTR. XKX is a combination of two TBCs, Minematsu's TBC and Liskov et al.'s TBC. In the XKX-based AE schemes, a nonce and a counter are taken as tweak; a nonce-dependent blockcipher's key is generated by using a pseudo-random function F (from Minematsu); a counter is inputted to an almost xor universal hash function, and the hash value is xor-ed with the input and output blocks of a blockcipher with the nonce-dependent key (from Liskov et al.). For each query to the AE scheme, after the nonce-dependent key is generated, it can be reused, thereby a blockcipher is called once for each data block. We prove that the security bounds of the XKX-based AE schemes become roughly ℓ2q/2n, where q is the number of queries to the AE scheme, n is the blockcipher size, and ℓ is the number of blockcipher calls in one AE evaluation. Regarding the function F, we present two blockcipher-based instantiations, the concatenation of blockcipher calls, F(1), and the xor of blockcipher calls, F(2), where F(i) calls a blockcipher i+1 times. By the PRF/PRP switch, the security bounds of the XKX-based AE schemes with F(1) become roughly ℓ2q/2n+q2/2n, thus if ℓ≪2n/2 and q≪2n/2, these achieve BBB security. By the xor construction, the security bounds of the XKX-based AE schemes with F(2) become roughly ℓ2q/2n+q/2n, thus if ℓ≪2n/2, these achieve BBB security.</dcterms:abstract>
+        <dc:date>2017</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://eprint.iacr.org/2017/466</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:47:10</dcterms:dateSubmitted>
+        <bib:pages>1-26</bib:pages>
+    </bib:Article>
+    <bib:Memo rdf:about="#item_105">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Рассматривается настраиваемый блочный шифр XKX, который обеспечивает эффективные схемы AE с безопасностью BBB. Предлагается инновационный подход, позволяющий вызывать блочный шифр только один раз для каждого блока данных, что значительно повышает эффективность и безопасность схем AE&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_82">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Naito - 2017 - Tweakable Blockciphers for Efficient Authenticated.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://eprint.iacr.org/2017/466.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:47:18</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="https://www.usenix.org/conference/usenixsecurity22/presentation/albertini">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>31st USENIX Security Symposium (USENIX Security 22)</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Albertini</foaf:surname>
+                        <foaf:givenName>Ange</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Duong</foaf:surname>
+                        <foaf:givenName>Thai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gueron</foaf:surname>
+                        <foaf:givenName>Shay</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kölbl</foaf:surname>
+                        <foaf:givenName>Stefan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Luykx</foaf:surname>
+                        <foaf:givenName>Atul</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schmieg</foaf:surname>
+                        <foaf:givenName>Sophie</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_95"/>
+        <link:link rdf:resource="#item_83"/>
+        <dc:subject>AES</dc:subject>
+        <dc:subject>key commitment</dc:subject>
+        <dc:subject>algorithm</dc:subject>
+        <dc:subject>OCB</dc:subject>
+        <dc:title>How to Abuse and Fix Authenticated Encryption Without Key Commitment</dc:title>
+        <dcterms:abstract>Authenticated encryption (AE) is used in a wide variety of applications, potentially in settings for which it was not originally designed. Recent research tries to understand what happens when AE is not used as prescribed by its designers. A question given relatively little attention is whether an AE scheme guarantees “key commitment”: ciphertext should only decrypt to a valid plaintext under the key used to generate the ciphertext. Generally, AE schemes do not guarantee key commitment as it is not part of AE’s design goal. Nevertheless, one would not expect this seemingly obscure property to have much impact on the security of actual products. In reality, however, products do rely on key commitment. We discuss three recent applications where missing key commitment is exploitable in practice. We provide proof-of-concept attacks via a tool that constructs AES-GCM ciphertext which can be decrypted to two plaintexts valid under a wide variety of file formats, such as PDF, Windows executables, and DICOM. Finally we discuss two solutions to add key commitment to AE schemes which have not been analyzed in the literature: a generic approach that adds an explicit key commitment scheme to the AE scheme, and a simple fix which works for AE schemes like AES-GCM and ChaCha20Poly1305, but requires separate analysis for each scheme.</dcterms:abstract>
+        <dc:date>2022</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.usenix.org/conference/usenixsecurity22/presentation/albertini</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:47:13</dcterms:dateSubmitted>
+        <bib:pages>3291–3308</bib:pages>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_95">
+        <rdf:value>&lt;div data-schema-version=&quot;8&quot;&gt;&lt;p&gt;Исследуется проблема отсутствия &quot;фиксации ключа&quot; в схемах AE, показывая, что это может привести к практическим уязвимостям в реальных приложениях. Предлагаются 2 подхода к решению проблемы: добавление явной схемы ключевых обязательств и простое исправление, специфичное для определенных схем AE&lt;/p&gt;
+&lt;/div&gt;</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_83">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Albertini и др. - 2022 - How to Abuse and Fix Authenticated Encryption With.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.usenix.org/system/files/sec22-albertini.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-08-12 23:47:19</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+</rdf:RDF>
